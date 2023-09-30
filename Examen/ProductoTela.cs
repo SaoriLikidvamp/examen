@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    class ProductoTela:Producto
+    class ProductoTela : Producto
     {
         public string Tamaño;
         public string Material;

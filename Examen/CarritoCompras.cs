@@ -20,20 +20,24 @@ namespace Examen
             float precioTotal = 0;
             foreach (var producto in this.productos)
             {
-                precioTotal += (float)producto.CalcularPrecio();
+                precioTotal += producto.CalcularPrecio();
             }
             return precioTotal;
         }
 
         public void MostrarContenido()
         {
+            Console.WriteLine("---------------------------------");
             Console.WriteLine("Contenido del carrito de compras:");
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine(" ");
             foreach (var producto in this.productos)
             {
                 Console.WriteLine(producto.ObtenerCaracteristicas());
             }
-            Console.WriteLine($"- Precio Total: {this.CalcularPrecioTotal():C}");
+            Console.WriteLine(" ");
+            Console.WriteLine($"------ Precio Total: {this.CalcularPrecioTotal():C} ------");
+            Console.WriteLine(" ");
         }
     }
-}
 }

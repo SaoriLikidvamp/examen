@@ -8,11 +8,11 @@ namespace Examen
 {
     class ProductoArcilla : Producto
     {
-        public double Peso;
+        public float Peso;
         public string Tamaño;
         public string Color;
 
-        public ProductoArcilla(string nombre, float precio, double peso, string tamaño, string color): base(nombre, precio)
+        public ProductoArcilla(string nombre, float precio, float peso, string tamaño, string color): base(nombre, precio)
         {
             this.Peso = peso;
             this.Tamaño = tamaño;

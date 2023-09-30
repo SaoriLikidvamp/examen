@@ -18,7 +18,7 @@ namespace Examen
         }
         public virtual string ObtenerCaracteristicas()
         {
-            return $"Nombre: {Nombre}, Precio: {Precio:C}";
+            return $" - Nombre: {Nombre}, Precio: {Precio:C}";
         }
 
         public virtual float CalcularPrecio()
